@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1521684997 source:/home/joceduardoarias/Documentos/utn/programacion_1_laboratorio_1/Prog1/ejercicio_4/main.c
+	<stdio.h>
+	<stdlib.h>
+
