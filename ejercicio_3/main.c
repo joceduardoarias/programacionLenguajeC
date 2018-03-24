@@ -23,7 +23,8 @@ int main()
     // calculo
     descuento = precio * (porcentajeDescuento / 100);
     resultado = precio - descuento;
-    iva = precio * 0.21;
+    iva = resultado * 0.21; // como voy a pagar con descuento el iva se aplica al precio con el descuento
+                            // por eso utilizo resultado y no precio.
     precioFinal = resultado + iva;
     printf("\n 1. El descuento es: %.1f \n 2. Precio con descuento: %.1f \n 3. IVA: %.1f \n 4. Precio final: %.1f\n", descuento, resultado, iva, precioFinal);
 

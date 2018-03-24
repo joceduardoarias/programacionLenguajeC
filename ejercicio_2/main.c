@@ -7,14 +7,14 @@
 int main()
 {
     // Declara variables de entrada y salida
-    char nombre[20];
+    char nombre[20]; // declarar variable tipo char
     char localidad[20];
     // Entrada de datos
     printf("Ingrese su nombre: ");
-    scanf("%s",nombre);
+    gets(nombre);// con cadena de caracteres no va "&"
     printf("Ingrese su localidad: ");
     fflush( stdin );
-    scanf("%s",localidad);
+    gets(localidad); // usamos gets esta funcion es especial para caracteres. es mas facil para entrada de caracteres.
     // Salidad de datos
     printf("\n Su nombre es %s y vive en la localidad de %s \n", nombre, localidad);
     return 0;

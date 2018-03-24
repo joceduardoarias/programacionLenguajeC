@@ -13,8 +13,7 @@ int main()
     // Declrar variables
     int numeroUno;
     int numeroDos;
-    int resultado;
-    int suma;
+    float resultado;
     // Datos de entrada
     printf("Ingrese numero: ");
     scanf("%d", &numeroUno);
@@ -24,27 +23,25 @@ int main()
     // Secuendia de control
     if(numeroUno == numeroDos)
     {
-       resultado = printf("\n %d%d \n", numeroUno, numeroDos);
+       printf("\n %d%d \n", numeroUno, numeroDos);
     }
     else
     {
         if(numeroUno > numeroDos)
-        {
-            resultado = numeroUno / numeroDos;
-        }
+        {   //  if (numeroDos != 0) asi validamos que la division se pueda realizar
+            resultado = (float)numeroUno / numeroDos; // asi estoy casteando numeroUno y numeroDos son enteros con float
+        }                                             // antes de la operacion de la derecha hace que el resultado sea un dato float.
         else
         {
-            if(numeroUno < numeroDos)
-            {
             resultado = numeroUno + numeroDos;
-            suma = resultado;
+
+            if(resultado < 50)
+            {
+              printf("La suma es: %d y es menor a 50", resultado);
             }
         }
     }
-    if(suma < 50)
-    {
-        printf("La suma es: %d y es menor a 50", suma);
-    }
+
     printf("\n El resultado es: %d \n", resultado);
     return 0;
 }

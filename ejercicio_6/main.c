@@ -14,9 +14,6 @@ int main()
 {
     // Declarar variables
     int nota;
-    char mensaje[15];
-    char mensajeUno[6];
-    char mensajeDos[25];
     // Datos de entrada
     printf("Ingrese la nota: ");
     scanf("%d", &nota);
@@ -27,35 +24,34 @@ int main()
         case 1:
         case 2:
         case 3:
-            strcpy(mensaje,"La proxima se puede");
+            prinf("La proxima se puede");
         break;
 
         case 4:
         case 5:
         case 6:
-            strcpy(mensaje,"Raspando");
+            printf("Raspando");
+            if(nota < 5)
+            {
+                printf("debes preocuparte más")
+            }
         break;
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+               printf("Aprobo");
+               if(nota > 8)
+               {
+                    printf("Aprobo muy bien");
+               }
 
+        break;
         default:
 
-            strcpy(mensaje,"Aprobo");
-
+            printf("nota invalida");
+        break;
     }
-
-    if(mensaje == "" && nota == 8)
-    {
-        strcpy(mensajeUno,"Muy bien");
-    }
-    else
-    {
-        if(mensaje == "Raspando" && nota < 6)
-        {
-            strcpy(mensajeDos, "debes preocuparte más");
-        }
-
-    }
-
-    printf("\n %s %s %s \n"mensaje, mensajeUno, mensajeDos);
 
     return 0;
 }
