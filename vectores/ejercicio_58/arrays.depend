@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1523292579 source:/home/joceduardoarias/Documentos/utn/programacion_1_laboratorio_1/programacion_1_laboratorio_1-master/arrays/main.c
+	<stdio.h>
+	<stdlib.h>
+

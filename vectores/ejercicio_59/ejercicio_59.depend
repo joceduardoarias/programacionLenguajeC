@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1523453002 source:/home/joceduardoarias/Documentos/utn/programacion_1_laboratorio_1/programacion_1_laboratorio_1-master/vectores/ejercicio_59/main.c
+	<stdio.h>
+	<stdlib.h>
+
