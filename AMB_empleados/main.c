@@ -34,9 +34,17 @@ void modificarEmpleado(eEmpleado vec[], int tam);
 
 int main()
 {
+    int i;
     int salir=0;
-    eEmpleado vec[TAM];
+    eEmpleado vec[]= {{111,"JOSE",'M',16700,0,{10,1,2015}},{112,"MARINA",'F',20700,0,{3,12,2011}}};
     inicializarEmpleado(vec,TAM);
+    for(i=0; i<TAM; i++)
+    {
+        vec[i].isEmpty = 0;
+
+    }
+
+
 
     do
     {
@@ -149,16 +157,16 @@ void mostrarEmpleados(eEmpleado vec[],int tam)
 
     for(i=0; i<tam; i++)
     {
-        if(vec[i].isEmpty == 1)
+        if(vec[i].isEmpty == 0)
         {
 
-            printf("\n %d   %s    %c    %f  %d %d %d",vec[i].legajo,vec[i].nombre,vec[i].sexo,vec[i].sueldo,vec[i].fechaIngreso.dia,vec[i].fechaIngreso.mes,vec[i].fechaIngreso.anio);
+            mostrarEmpleado(vec[i]);
         }
     }
 }
 void mostrarEmpleado(eEmpleado vec)
 {
-    printf("\n %d   %s    %c    %f  %d %d %d",vec.legajo,vec.nombre,vec.sexo,vec.sueldo,vec.fechaIngreso.dia,vec.fechaIngreso.mes,vec.fechaIngreso.anio);
+    printf("\n %d%12s    %4c    %10.2f  %d/%02d/%4d \n",vec.legajo,vec.nombre,vec.sexo,vec.sueldo,vec.fechaIngreso.dia,vec.fechaIngreso.mes,vec.fechaIngreso.anio);
 }
 void altaEmpleado(eEmpleado vec[],int tam)
 {
@@ -202,7 +210,8 @@ void altaEmpleado(eEmpleado vec[],int tam)
             scanf("%f", &nuevoEmpleado.sueldo);
             printf("\n ingrese fecha de ingreso: ");
             scanf("%d %d %d",&nuevoEmpleado.fechaIngreso.anio,&nuevoEmpleado.fechaIngreso.dia,&nuevoEmpleado.fechaIngreso.mes);
-
+            vec[index] = nuevoEmpleado;
+            printf("\n\n ALTA EXISTOSA");
         }
 
     }
