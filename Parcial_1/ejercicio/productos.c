@@ -61,6 +61,14 @@ int findEmptyPlace(eProduct productArray[],int arrayLenght)
     }
     return -1;
 }
+void setPorductos(eProduct productArray[],int freePlaceIndex, char description[],int code,float price,int stock)
+{
+productArray[freePlaceIndex].code= code;
+    strcpy(productArray[freePlaceIndex].description,description);
+    productArray[freePlaceIndex].qty = stock;
+    productArray[freePlaceIndex].price=price;
+    productArray[freePlaceIndex].status = 1;
+}
 void altaDeProductos(eProduct productArray[],int tam)
 {
 
@@ -402,12 +410,12 @@ void productosStockMenorIgualDiez(eProduct productArray[],int tam)
             }
             else
             {
-                printf("no hay productos cuyo stock sea menor o igual a diez");
+                printf("\nno hay productos cuyo stock sea menor o igual a diez\n");
 
             }
         }
     }
-    printf(" Cantidad de productos con stock menor a diez: %d", prodecMenor);
+    printf("\n Cantidad de productos con stock menor a diez: %d\n\n", prodecMenor);
 }
 void productosStockMayorDiez(eProduct productArray[],int tam)
 {
@@ -424,10 +432,10 @@ void productosStockMayorDiez(eProduct productArray[],int tam)
             }
             else
             {
-                printf("no hay productos cuyo stock sea mayor a diez");
+                printf("\nNo hay productos cuyo stock sea mayor a diez\n\n");
 
             }
         }
     }
-    printf(" Cantidad de productos con stock menor a diez: %d", prodecMayor);
+    printf("\n Cantidad de productos con stock mayor a diez: %d\n", prodecMayor);
 }

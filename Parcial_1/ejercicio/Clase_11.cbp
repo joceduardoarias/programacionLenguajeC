@@ -38,6 +38,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="productos.h" />
+		<Unit filename="proveedore.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="proveedores.h" />
 		<Unit filename="utn.c">
 			<Option compilerVar="CC" />
 		</Unit>

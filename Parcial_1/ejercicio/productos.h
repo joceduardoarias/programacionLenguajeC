@@ -1,11 +1,12 @@
-typedef struct{
+typedef struct
+{
     char description[51];
     int code;
     int qty;
     float price;
+    int idProveedor;
     int status; /**< Active (1) or Inactive (0)  */
-}eProduct;
-
+} eProduct;
 
 void setStatus(eProduct productArray[],int arrayLenght,int value);
 int findEmptyPlace(eProduct productArray[],int arrayLenght);
@@ -20,6 +21,7 @@ void bajaDeProductos(eProduct productArray[],int tam);
 void modificacionDeProductos(eProduct productArray[],int tam);
 void mostrarProducto(eProduct productArray);
 void listarProductos(eProduct productArray[], int tam);
+void setPorductos(eProduct productArray[],int freePlaceIndex, char description[],int code,float price,int stock);
 /** \brief total, promedio de importes, cuantos productos superan ese promedio de importes
  *
  * \param

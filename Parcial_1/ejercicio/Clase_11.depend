@@ -91,16 +91,17 @@
 	"utn.h"
 	"productos.h"
 
-1526324859 source:c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\main.c
+1526441568 source:c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\main.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
 	"utn.h"
 	"productos.h"
+	"proveedores.h"
 
 1457806122 c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\utn.h
 
-1526324649 c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\productos.h
+1526433205 c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\productos.h
 
 1526197548 source:c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\utn.c
 	<stdio.h>
@@ -108,10 +109,19 @@
 	<time.h>
 	<string.h>
 
-1526321940 source:c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\productos.c
+1526434666 source:c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\productos.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
 	"utn.h"
 	"productos.h"
+
+1526441432 source:c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\proveedore.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"proveedores.h"
+
+1526441353 c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\proveedores.h
 
