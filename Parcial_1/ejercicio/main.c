@@ -23,7 +23,7 @@ int main()
     setPorductos(productArray,1,"ZERO",2,30,40);
     setPorductos(productArray,2,"MIRINGA",3,30,30);
     setPorductos(productArray,3,"PEPSI",4,33,50);
-    setPorductos(productArray,4,"FANTA",5,33,25);
+    setPorductos(productArray,4,"FANTA",5,33,10);
 
     setProveedores(proveedorArray,0,1,"Potigian");
     setProveedores(proveedorArray,1,2,"Supply");
@@ -59,11 +59,6 @@ int main()
             break;
         }
     }
-
-
-
-
-
 
     return 0;
 }

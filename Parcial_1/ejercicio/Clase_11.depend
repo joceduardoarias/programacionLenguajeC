@@ -125,3 +125,37 @@
 
 1526441353 c:\users\elkinjose\documents\laboratorios\laboratorio_programacionc\parcial_1\ejercicio\proveedores.h
 
+1526479086 source:c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\productos.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+
+1457806122 c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\utn.h
+
+1526433205 c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\productos.h
+
+1526442074 source:c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\proveedore.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"proveedores.h"
+
+1526441929 c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\proveedores.h
+
+1526197548 source:c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1526478738 source:c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+	"proveedores.h"
+
