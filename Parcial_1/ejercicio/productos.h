@@ -21,7 +21,7 @@ void bajaDeProductos(eProduct productArray[],int tam);
 void modificacionDeProductos(eProduct productArray[],int tam);
 void mostrarProducto(eProduct productArray);
 void listarProductos(eProduct productArray[], int tam);
-void setPorductos(eProduct productArray[],int freePlaceIndex, char description[],int code,float price,int stock);
+void setPorductos(eProduct productArray[],int freePlaceIndex, char description[],int code,float price,int stock,int idProveedor);
 /** \brief total, promedio de importes, cuantos productos superan ese promedio de importes
  *
  * \param

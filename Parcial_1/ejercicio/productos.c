@@ -61,12 +61,13 @@ int findEmptyPlace(eProduct productArray[],int arrayLenght)
     }
     return -1;
 }
-void setPorductos(eProduct productArray[],int freePlaceIndex, char description[],int code,float price,int stock)
+void setPorductos(eProduct productArray[],int freePlaceIndex, char description[],int code,float price,int stock,int idProveedor)
 {
     productArray[freePlaceIndex].code= code;
     strcpy(productArray[freePlaceIndex].description,description);
     productArray[freePlaceIndex].qty = stock;
     productArray[freePlaceIndex].price=price;
+    productArray[freePlaceIndex].idProveedor=idProveedor;
     productArray[freePlaceIndex].status = 1;
 }
 void altaDeProductos(eProduct productArray[],int tam)
@@ -337,7 +338,7 @@ void productosPromedioSuperior(eProduct productArray[],int tam)
 {
     int i;
     int productActivo=0;
-    int productSuoerior=0;
+    int productSuperior=0;
     float promedio;
     float totalPrecios=0;
 
@@ -357,12 +358,12 @@ void productosPromedioSuperior(eProduct productArray[],int tam)
         {
             if(productArray[i].price > promedio)
             {
-                productSuoerior++;
+                productSuperior++;
             }
         }
 
     }
-    printf("\nCantidad de productos por arriba del promedio de precios: %d\n\n", productSuoerior);
+    printf("\nCantidad de productos por arriba del promedio de precios: %d\n\n", productSuperior);
 }
 void productosPromedioInferior(eProduct productArray[],int tam)
 {
@@ -447,3 +448,5 @@ void productosStockMayorDiez(eProduct productArray[],int tam)
     }
 
 }
+
+
