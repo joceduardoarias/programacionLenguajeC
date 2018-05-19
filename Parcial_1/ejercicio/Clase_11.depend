@@ -171,3 +171,40 @@
 
 1526519479 c:\users\elkinjose\desktop\programacionlenguajec\parcial_1\ejercicio\listados.h
 
+1526692269 source:c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+	"proveedores.h"
+	"listados.h"
+
+1526692269 c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\utn.h
+
+1526692269 c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\productos.h
+
+1526692269 c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\proveedores.h
+
+1526692269 c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\listados.h
+
+1526692269 source:c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\productos.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+
+1526692269 source:c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1526692269 source:c:\users\alumno\desktop\programacionlenguajec-master\parcial_1\ejercicio\proveedore.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"proveedores.h"
+

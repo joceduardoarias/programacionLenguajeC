@@ -106,7 +106,7 @@ void listarProveedorProductoCantidadMenor(eProduct productArray[], int tam, ePro
     printf("________________________________________________________________\n");
     for(i=0; i<tam; i++)
     {
-      if(productArray[i].status != 0 && productArray[i].qty<10)
+        if(productArray[i].status != 0 && productArray[i].qty<10)
         {
             auxIdProveedor = findProveedorByid(proveedorArray,tamproveedor,productArray[i].idProveedor);
             if(  auxIdProveedor!= -1)
@@ -120,21 +120,19 @@ void listarProveedorProductoCantidadMenor(eProduct productArray[], int tam, ePro
 void listarPorductosPorProveedor(eProduct productArray[], int tam, eProveedor proveedorArray[],int tamproveedor)
 {
     int i,j;
-    for(i=0;i<tamproveedor;i++)
+    for(i=0; i<tamproveedor; i++)
     {
-        if(proveedorArray[i].status ==1)
+        if(proveedorArray[i].status==1)
         {
             mostrarProveedor(proveedorArray[i]);
-            for(j=0;j<tam;j++)
-            {
-                if(productArray[j].idProveedor==proveedorArray[i].idProveedor)
-            {
-                mostrarProducto(productArray[i]);
-            }
-            }
-
         }
 
-
+        for(j=0; j<tam; j++)
+        {
+            if(proveedorArray[i].idProveedor == productArray[j].idProveedor && (proveedorArray[i].status==1 && productArray[j].status==1 ))
+            {
+                mostrarProducto(productArray[j]);
+            }
+        }
     }
 }
