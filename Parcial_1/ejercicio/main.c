@@ -5,13 +5,14 @@
 #include "productos.h"
 #include "proveedores.h"
 #include "listados.h"
+#include "menu.h"
 #define TAM 200
 
-void adminProductos(eProduct productArray[]);
-void adminProveedores(eProveedor proveedorArray[]);
+
 
 int main()
 {
+
     // arrays de productos
     eProduct productArray[TAM];
     setStatus(productArray,TAM,0);
@@ -37,7 +38,7 @@ int main()
     {
         system("cls");
         printf("\n------------  MENU PRINCIPAL ------------");
-        option = getInt("\n1 - ABM PRODUCTOS \n2 - ABM PROVEDORES \n3 - INFORMES\n4 - Lista ordenada\n5 -  Productos stock menor o igual 10 \n6 - Productos stock igual 10 \n7 - Productos por encima del promedio de importes\n8 - Productos que no superan el promedio de importes\n9 - Proveedores cuya cantidad de producto es menor a 10\n10 - Todos los productos provistos por proveedor  \n15 - SALIR  \n\n");
+        option = getInt("\n1 - ABM PRODUCTOS \n2 - ABM PROVEDORES \n3 - INFORMES\n4 - Lista ordenada\n5 -  Productos stock menor o igual 10 \n6 - Productos stock igual 10 \n7 - Productos por encima del promedio de importes\n8 - Productos que no superan el promedio de importes\n9 - Proveedores cuya cantidad de producto es menor a 10\n10 - Todos los productos provistos por proveedor\n11 - Productos mas barato \n12 - Producto mas caro  \n15 - SALIR  \n\n");
         switch(option)
         {
         case 1: // ABM PRODUCTOS
@@ -93,6 +94,16 @@ int main()
             listarPorductosPorProveedor(productArray,TAM,proveedorArray,TAM);
             system("pause");
             break;
+        case 11:
+            system("cls");
+            listaProductomasBarato(productArray,TAM,proveedorArray,TAM);
+            system("pause");
+            break;
+        case 12:
+            system("cls");
+            listaProductomasCaro(productArray,TAM,proveedorArray,TAM);
+            system("pause");
+            break;
         case 15:
             option = 15;
             break;
@@ -100,92 +111,4 @@ int main()
     }
 
     return 0;
-}
-
-void adminProductos(eProduct productArray[])
-{
-    int option = 0;
-    while(option != 9)
-    {
-        system("cls");
-        option = getInt("\n\n\n1 - ALTA \n2 - BAJA \n3 - MODIFICACION\n4 - LISTAR\n6 - INFORMES\n9 - SALIR\n\n\n");
-        switch(option)
-        {
-        case 1:
-            system("cls");
-            altaDeProductos(productArray,TAM);
-
-            system("pause");
-            break;
-
-        case 2:
-            system("cls");
-            bajaDeProductos(productArray,TAM);
-
-            system("pause");
-            break;
-
-        case 3:
-            system("cls");
-            modificacionDeProductos(productArray,TAM);
-            system("pause");
-            break;
-
-        case 4:
-            system("cls");
-            listarProductos(productArray,TAM);
-            system("pause");
-            break;
-        case 6:
-            system("cls");
-            totalImportes(productArray,TAM);
-            promedioImportes(productArray,TAM);
-            productosPromedioSuperior(productArray,TAM);
-            productosStockMenorIgualDiez(productArray,TAM);
-            productosStockMayorDiez(productArray,TAM);
-            system("pause");
-            break;
-        case 9:
-            option=9;
-            break;
-        }
-    }
-}
-void adminProveedores(eProveedor proveedorArray[])
-{
-    int option = 0;
-
-    while(option!=5)
-    {
-        system("cls");
-        option = getInt("\n\n\n1 - ALTA \n2 - BAJA \n3 - MODIFICACION\n4 - LISTAR\n5 - SALIR\n\n\n");
-        switch(option)
-        {
-        case 1:
-            system("cls");
-            altaDeProveedores(proveedorArray,TAM);
-            system("pause");
-            break;
-        case 2:
-            system("cls");
-            bajaDeProveedores(proveedorArray,TAM);
-            system("pause");
-            break;
-        case 3:
-            system("cls");
-            modificacionDeProveedores(proveedorArray,TAM);
-            system("pause");
-            break;
-        case 4:
-            system("cls");
-            listarProveedores(proveedorArray,TAM);
-            system("pause");
-            break;
-        case 5:
-            option = 5;
-            break;
-        }
-    }
-
-
 }

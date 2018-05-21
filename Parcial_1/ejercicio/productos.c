@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include "utn.h"
 #include "productos.h"
+#include "proveedores.h"
+#include "listados.h"
 
 /**
  * \brief Inicializa el status en un array de productos
@@ -74,13 +76,15 @@ void altaDeProductos(eProduct productArray[],int tam)
 {
 
     int freePlaceIndex;
-    char codeAuxStr[50];
     int codeAux;
     int qtyAux;
+    int priceAux;
+    int idProveedorAux;
     char qtyAuxStr[50];
     char priceAuxStr[50];
     char descriptionAux[51];
-    int priceAux;
+
+
 
     system("cls");
 
@@ -94,12 +98,13 @@ void altaDeProductos(eProduct productArray[],int tam)
 
     printf("\nALTA\n");
 
-    while (!getStringNumeros("Ingrese el codigo: ",codeAuxStr))
+    /*while (!getStringNumeros("Ingrese el codigo: ",codeAuxStr))
     {
         printf ("El codigo debe ser numerico\n");
 
-    }
-    codeAux = atoi(codeAuxStr);
+    }*/
+    codeAux = getNumeroAleatorio(201,1,1);
+
 
     if( findProductByCode(productArray,tam,codeAux)!= -1)
     {
@@ -129,10 +134,14 @@ void altaDeProductos(eProduct productArray[],int tam)
         }
         priceAux = atof(priceAuxStr);
 
+
+        idProveedorAux = getNumeroAleatorio(1,5,1);
+
         productArray[freePlaceIndex].code = codeAux;
         strcpy(productArray[freePlaceIndex].description,descriptionAux);
         productArray[freePlaceIndex].price = priceAux;
         productArray[freePlaceIndex].qty = qtyAux;
+        productArray[freePlaceIndex].idProveedor= idProveedorAux;
         productArray[freePlaceIndex].status = 1;
     }
 }

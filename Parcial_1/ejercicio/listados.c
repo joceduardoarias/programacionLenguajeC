@@ -169,4 +169,97 @@ void listaOrdenadaProductos(eProduct productArray[], int tam)
         }
     }
 }
+float getCheaperPrice(eProduct productArray[],int tam)
+{
+    int i;
+    float cheaperPrice = -1;
 
+    for(i=0; i < tam; i++)
+    {
+        if(productArray[i].status == 1)
+        {
+            cheaperPrice = productArray[i].price;
+            break;
+        }
+    }
+
+    if(cheaperPrice == -1) /**< Si se cumple indica que no existen productos activos en el array */
+        return -1;
+
+    for(i=0; i < tam; i++)
+    {
+        if(cheaperPrice > productArray[i].price && productArray[i].status == 1)
+        {
+            cheaperPrice = productArray[i].price;
+        }
+    }
+
+    return cheaperPrice;
+}
+float getExpensivePrice(eProduct productArray[],int tam)
+{
+    int i;
+    float expensivePrice = -1;
+
+    for(i=0; i < tam; i++)
+    {
+        if(productArray[i].status == 1)
+        {
+            expensivePrice = productArray[i].price;
+            break;
+        }
+    }
+
+    if(expensivePrice == -1) /**< Si se cumple indica que no existen productos activos en el array */
+        return -1;
+
+    for(i=0; i < tam; i++)
+    {
+        if(expensivePrice < productArray[i].price && productArray[i].status == 1)
+        {
+            expensivePrice = productArray[i].price;
+        }
+    }
+
+    return expensivePrice;
+}
+void listaProductomasBarato(eProduct productArray[], int tam, eProveedor proveedorArray[],int tamproveedor)
+{
+    int i;
+    printf("\nINFORMAR PRODUCTOS MAS BARATO\n");
+    float priceAux = getCheaperPrice(productArray,tam);
+    if(priceAux == -1)
+    {
+        printf("\nNO HAY PRODUCTOS\n");
+
+    }
+    for(i=0; i < tam; i++)
+    {
+        if(productArray[i].price == priceAux && productArray[i].status == 1 )
+        {
+            mostrarProveedor(proveedorArray[i]);
+            mostrarProducto(productArray[i]);
+            //printf("\n%d - %s - %d - %.2f",productArray[i].code,productArray[i].description,productArray[i].qty,productArray[i].price);
+        }
+    }
+}
+void listaProductomasCaro(eProduct productArray[], int tam, eProveedor proveedorArray[],int tamproveedor)
+{
+    int i;
+    printf("\nINFORMAR PRODUCTOS MAS CARO\n");
+    float priceAux = getExpensivePrice(productArray,tam);
+    if(priceAux == -1)
+    {
+        printf("\nNO HAY PRODUCTOS\n");
+
+    }
+    for(i=0; i < tam; i++)
+    {
+        if(productArray[i].price == priceAux && productArray[i].status == 1 )
+        {
+            mostrarProveedor(proveedorArray[i]);
+            mostrarProducto(productArray[i]);
+            //printf("\n%d - %s - %d - %.2f",productArray[i].code,productArray[i].description,productArray[i].qty,productArray[i].price);
+        }
+    }
+}

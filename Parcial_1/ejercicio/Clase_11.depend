@@ -208,7 +208,7 @@
 	"utn.h"
 	"proveedores.h"
 
-1526910265 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\main.c
+1526928502 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\main.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
@@ -216,21 +216,24 @@
 	"productos.h"
 	"proveedores.h"
 	"listados.h"
+	"menu.h"
 
 1526917390 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\utn.h
 
-1526917389 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\productos.h
+1526929826 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\productos.h
 
-1526917389 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\proveedores.h
+1526930139 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\proveedores.h
 
-1526919485 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\listados.h
+1526930931 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\listados.h
 
-1526917389 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\productos.c
+1526930951 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\productos.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
 	"utn.h"
 	"productos.h"
+	"proveedores.h"
+	"listados.h"
 
 1526917389 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\proveedore.c
 	<stdio.h>
@@ -245,7 +248,7 @@
 	<time.h>
 	<string.h>
 
-1526919511 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\listados.c
+1526924617 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\listados.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
@@ -253,4 +256,16 @@
 	"productos.h"
 	"proveedores.h"
 	"listados.h"
+
+1526927971 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\menu.h
+
+1526928370 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\menu.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"proveedores.h"
+	"productos.h"
+	"listados.h"
+	"menu.h"
 
