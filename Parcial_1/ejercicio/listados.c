@@ -120,6 +120,7 @@ void listarProveedorProductoCantidadMenor(eProduct productArray[], int tam, ePro
 void listarPorductosPorProveedor(eProduct productArray[], int tam, eProveedor proveedorArray[],int tamproveedor)
 {
     int i,j;
+    printf("\n       Listado de provedores con su oferta de productos\n");
     for(i=0; i<tamproveedor; i++)
     {
         if(proveedorArray[i].status==1)
@@ -136,3 +137,36 @@ void listarPorductosPorProveedor(eProduct productArray[], int tam, eProveedor pr
         }
     }
 }
+void listaOrdenadaProductos(eProduct productArray[], int tam)
+{
+    eProduct auxProduct;
+    int i,j;
+
+    for(i=0; i< tam-1; i++)
+    {
+        for(j=i +1; j< tam; j++)
+        {
+            if(productArray[i].price == productArray[j].price)
+            {
+                if(strcmp(productArray[i].description, productArray[j].description)>0)
+                {
+                    auxProduct = productArray[i];
+                    productArray[i] = productArray[j];
+                    productArray[j] = auxProduct;
+                }
+
+            }
+            else
+            {
+                if(productArray[i].price > productArray[j].price)
+                {
+                    auxProduct = productArray[i];
+                    productArray[i] = productArray[j];
+                    productArray[j] = auxProduct;
+                }
+
+            }
+        }
+    }
+}
+

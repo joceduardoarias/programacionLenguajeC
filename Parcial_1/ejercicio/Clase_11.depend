@@ -208,3 +208,49 @@
 	"utn.h"
 	"proveedores.h"
 
+1526910265 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+	"proveedores.h"
+	"listados.h"
+
+1526917390 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\utn.h
+
+1526917389 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\productos.h
+
+1526917389 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\proveedores.h
+
+1526919485 c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\listados.h
+
+1526917389 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\productos.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+
+1526917389 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\proveedore.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"proveedores.h"
+
+1526917390 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1526919511 source:c:\users\elkinjose\desktop\temporal\parcial_1\ejercicio\listados.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"productos.h"
+	"proveedores.h"
+	"listados.h"
+

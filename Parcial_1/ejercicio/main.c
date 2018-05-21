@@ -37,7 +37,7 @@ int main()
     {
         system("cls");
         printf("\n------------  MENU PRINCIPAL ------------");
-        option = getInt("\n1 - ABM PRODUCTOS \n2 - ABM PROVEDORES \n3 - INFORMES\n4 -  Productos stock menor o igual 10 \n5 - Productos stock igual 10 \n6 - Productos por encima del promedio de importes\n7 - Productos que no superan el promedio de importes\n8 - Proveedores cuya cantidad de producto es menor a 10\n9 -  \n15 - SALIR  \n\n");
+        option = getInt("\n1 - ABM PRODUCTOS \n2 - ABM PROVEDORES \n3 - INFORMES\n4 - Lista ordenada\n5 -  Productos stock menor o igual 10 \n6 - Productos stock igual 10 \n7 - Productos por encima del promedio de importes\n8 - Productos que no superan el promedio de importes\n9 - Proveedores cuya cantidad de producto es menor a 10\n10 - Todos los productos provistos por proveedor  \n15 - SALIR  \n\n");
         switch(option)
         {
         case 1: // ABM PRODUCTOS
@@ -56,36 +56,39 @@ int main()
             system("pause");
             break;
         case 4:
+            listaOrdenadaProductos(productArray,TAM);
+            break;
+        case 5:
             system("cls");
             //B
             listaProductosMenorIgualDiez(productArray,TAM);
             system("pause");
             break;
-        case 5: // LISTAR
+        case 6: // LISTAR
             system("cls");
             //C
             listaProductosQtyIgualDiez(productArray,TAM);
             system("pause");
             break;
-        case 6: // LISTAR
+        case 7: // LISTAR
             system("cls");
             //D
             listaProductosPromedioSuperior(productArray,TAM);
             system("pause");
             break;
-        case 7: // LISTAR
+        case 8: // LISTAR
             system("cls");
             //E
             listarproductosPromediosInferior(productArray,TAM);
             system("pause");
             break;
-        case 8: // LISTAR
+        case 9: // LISTAR
             system("cls");
             //F
             listarProveedorProductoCantidadMenor(productArray,TAM,proveedorArray,TAM);
             system("pause");
             break;
-        case 9:
+        case 10:
              system("cls");
             listarPorductosPorProveedor(productArray,TAM,proveedorArray,TAM);
             system("pause");
